@@ -12,6 +12,7 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.WaterFluid;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateFactory;
+import net.minecraft.tag.FluidTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -44,7 +45,7 @@ public abstract class EnderFluid extends WaterFluid {
     }
 
     public boolean method_15777(FluidState fluidState, BlockView blockView, BlockPos blockPos, Fluid fluid, Direction direction) {
-        return direction == Direction.DOWN && !fluid.matches(EnderTags.VAIN);
+        return direction == Direction.DOWN && !fluid.matches(FluidTags.WATER);
     }
 
     public static class Flowing extends EnderFluid {

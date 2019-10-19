@@ -20,9 +20,12 @@
     "entrypoints": {
         "main": [
             "dev.odd.endersrealm.EndersRealm"
+        ],
+        "client": [
+            "dev.odd.endersrealm.EndersRealmClient"
         ]
     },
-    "mixins": ["endersrealm.mixins.json"],
+    "mixins": [],
 
     "depends": {
         "fabricloader": ">=0.4.0",
