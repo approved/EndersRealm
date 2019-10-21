@@ -1,9 +1,10 @@
-package dev.odd.endersrealm;
+package dev.odd.endersrealm.client;
 
-import dev.odd.endersrealm.block.EnderBlocks;
+import dev.odd.endersrealm.client.particle.EndRuneParticle;
 import dev.odd.endersrealm.fluid.EnderFluid;
+import dev.odd.endersrealm.particle.EnderParticles;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.render.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.minecraft.block.Blocks;
@@ -37,11 +38,6 @@ public class EndersRealmClient implements ClientModInitializer {
         FluidRenderHandlerRegistry.INSTANCE.register(EnderFluid.VAIN, vainRenderHandler);
         FluidRenderHandlerRegistry.INSTANCE.register(EnderFluid.FLOWING_VAIN, vainRenderHandler);
 
-        ColorProviderRegistry.BLOCK.register((blockState, blockView, pos, layer) -> {
-            return 0xFF683C95;
-        }, EnderBlocks.ENDER_DOMAIN);
-
-        System.out.println("EndersRealm Client Side Initialized");
+        ParticleFactoryRegistry.getInstance().register(EnderParticles.END_RUNES, EndRuneParticle.Factory::new);
     }
-
 }

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "lit=false": { "model": "endersrealm:block/fly_block" },
+        "lit=true": { "model": "endersrealm:block/fly_block_on" }
+    }
+}

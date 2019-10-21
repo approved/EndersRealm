@@ -22,7 +22,7 @@
             "dev.odd.endersrealm.EndersRealm"
         ],
         "client": [
-            "dev.odd.endersrealm.EndersRealmClient"
+            "dev.odd.endersrealm.client.EndersRealmClient"
         ]
     },
     "mixins": [],

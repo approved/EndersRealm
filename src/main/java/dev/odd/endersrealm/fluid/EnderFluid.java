@@ -3,7 +3,6 @@ package dev.odd.endersrealm.fluid;
 import dev.odd.endersrealm.EndersRealm;
 import dev.odd.endersrealm.block.EnderBlocks;
 import dev.odd.endersrealm.item.EnderItems;
-import dev.odd.endersrealm.tag.EnderTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.BaseFluid;

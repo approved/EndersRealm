@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "endersrealm:block/fly_block_side",
+        "down": "endersrealm:block/fly_block_bottom",
+        "up": "endersrealm:block/fly_block_top",
+        "north": "endersrealm:block/fly_block_side",
+        "east": "endersrealm:block/fly_block_side",
+        "south": "endersrealm:block/fly_block_side",
+        "west": "endersrealm:block/fly_block_side"
+    }
+}
